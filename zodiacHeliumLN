@@ -1,11 +1,14 @@
+#initialize variables
+
 zodiac_sign = ""
 year = int(input("Enter your birth year: ")) #ask the user for the year they were born
 
-if year < 1900:
-    print("Invalid birth year, it should not be earlier than 1900")
+if year < 1900: #checks if the year is less than 1900
+    print("Invalid birth year, it should not be earlier than 1900") #prints if the year is less than 1900
 else:
-    zodiac_number = (year - 1900) % 12
+    zodiac_number = (year - 1900) % 12 #a zodiac sign will recur after each 12 years
 
+    #checks what the user's zodiac sign is
     if zodiac_number == 0:
         zodiac_sign = "Rat (鼠 / Shǔ)"
     elif zodiac_number == 1:
@@ -31,4 +34,4 @@ else:
     else:
         zodiac_sign = "Pig (猪 / Zhū)"
 
-print(f"Your Chinese Zodiac Sign is : {zodiac_sign}")
+print(f"Your Chinese Zodiac Sign is : {zodiac_sign}") #print the user's zodiac sign
